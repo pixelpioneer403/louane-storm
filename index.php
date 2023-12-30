@@ -146,56 +146,53 @@
         </table>
     </div>
 
+
     <!-- Contact Start -->
     <div class="wrapper">
         <span class="icon-close"><ion-icon name="close"></ion-icon></span>
         <div class="form-box contact">
-            <form action="https://formspree.io/f/xjvqrlak" method="POST">
-                <h2>Contact</h2>
-                <form action="#">
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="person"></ion-icon></span>
-                        <input name="message" type="text" autocomplete="off" required>
-                        <label class="label">Nom & Prénom</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" name="email" autocomplete="off" required>
-                        <label class="label">Email</label>
-                    </div>
-                    <div class="input-box special">
-                        <span class="icon"><ion-icon name="document-text"></ion-icon></span>
-                        <textarea name="message" rows="4" autocomplete="off" required></textarea>
-                        <label class="label">Demande</label>
-                    </div>
-                    <button type="submit" class="btn">Soumettre</button>
-                    <div class="contact-socialmedia">
-                        <p>Me contacter sur les réseaux? <a href="#" class="socialmedia-link">Mes réseaux</a></p>
-                    </div>
-                </form>
+            <form id="contactForm" action="email.php" method="POST">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input id="fullname" name="fullname" type="text" autocomplete="off" required>
+                    <label class="label">Nom & Prénom</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input id="email" type="email" name="email" autocomplete="off" required>
+                    <label class="label">Email</label>
+                </div>
+                <div class="input-box special">
+                    <span class="icon"><ion-icon name="document-text"></ion-icon></span>
+                    <textarea id="message" name="message" rows="4" autocomplete="off" required></textarea>
+                    <label class="label">Demande</label>
+                </div>
+                <button type="submit" class="btn">Soumettre</button>
             </form>
+            <div class="contact-socialmedia">
+                <p>Me contacter sur les réseaux? <a href="#" class="socialmedia-link">Mes réseaux</a></p>
+            </div>
         </div>
 
         <div class="form-box socialmedia">
             <h2>Mes réseaux</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
-                    <input type="text" class="text" value="louanestorm">
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
-                    <input type="text" class="text" value="Louane Stm">
-                </div>
-                <div class="contact-socialmedia">
-                    <p>Me contacter par mail? <a href="#" class="contact-link">Contact</a></p>
-                </div>
-            </form>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="logo-instagram"></ion-icon></span>
+                <input type="text" class="text" value="louanestorm">
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="logo-facebook"></ion-icon></span>
+                <input type="text" class="text" value="Louane Stm">
+            </div>
+            <div class="contact-socialmedia">
+                <p>Me contacter par mail? <a href="#" class="contact-link">Contact</a></p>
+            </div>
         </div>
     </div>
     <!-- Contact End -->
 
-    
+
+
     <div class="galerie">
         <div class="card-group">
             <div class="card">
@@ -250,7 +247,7 @@
                 <img src="images/DSC_1641.jpg" alt="" data-fancybox="gallery" data-caption="Caption #1">
             </span>
         </div>
-        
+
     </div>
     <!-- 
     <div class="lightroom">
@@ -274,6 +271,8 @@
 
 
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- Jquery Validate -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.20.0/jquery.validate.min.js" integrity="sha512-WMEKGZ7L5LWgaPeJtw9MBM4i5w5OSBlSjTjCtSnvFJGSVD26gE5+Td12qN5pvWXhuWaWcVwF++F7aqu9cvqP0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- FICHIER JS -->
     <script src="script.js"></script>
