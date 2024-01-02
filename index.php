@@ -214,7 +214,6 @@
         <div class="image-container">
             <span class="item item-1">
                 <img src="images/DSC_1264.jpg" alt="" data-fancybox="gallery" data-caption="Caption #1">
-                <p>Image 1</p>
             </span>
             <span class="item item-2">
                 <img src="images/2-img.jpg" alt="" data-fancybox="gallery" data-caption="Caption #1">

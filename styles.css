@@ -532,6 +532,7 @@
     justify-content: center;
     width: 1374px;
     z-index: 98;
+    backdrop-filter: blur(20px);
 }
 
 .galerie.show {
