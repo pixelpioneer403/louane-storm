@@ -24,11 +24,17 @@ $(document).ready(function () {
   toggleBtn.on("click", function () {
       isBlurred = !isBlurred;
       mobileNavigation.css("display", isBlurred ? "flex" : "none");
+      mobileHeader.css({
+          'backdropFilter': 'blur(0px)',
+          'height': '100%'
+      });
+
       mobileHeader.css("backdropFilter", isBlurred ? "blur(10px)" : "blur(0px)");
   });
 
   socialmediaLink.on("click", function () {
       wrapper.addClass("active");
+      
       console.log("Show Social Media");
   });
 
@@ -43,6 +49,14 @@ $(document).ready(function () {
       mensuration.removeClass("show");
       galerie.removeClass("show");
       body.removeClass("gallery");
+
+      mobileHeader.css({
+        'backdropFilter': 'blur(0px)',
+        'height': '0px'
+      });
+      
+      mobileNavigation.css("display", "none");
+      isBlurred = false;
       console.log("Show Contact");
   });
 
@@ -82,6 +96,15 @@ $(document).ready(function () {
       galerie.addClass("show");
       // header.addClass("mask");
       body.addClass("gallery");
+  });
+
+  $(".mobile__navigation a").on("click", function () {
+        mobileNavigation.css("display", "none");
+        mobileHeader.css({
+            'backdropFilter': 'blur(0px)',
+            'height': '0px'
+        });
+        isBlurred = false;
   });
 
 
